@@ -8,17 +8,13 @@ public class Main {
         DBConnection kategori = new DBConnection();
 
         //DB sınıfından kategori adında nesne türettik.
-        //sonrada bu nesne üzerinden metodumuzu çağırdık.
-//        nesne türetmeden de baska bir sınıfta ki metoda ulasılabilir
-//        fakat sınıf.metodismi derken metod static olmalıdır.
+        //sonrada bu nesne üzerinden metodumuzu çağırdık. 
+        //nesne türetmeden de baska bir sınıfta ki metoda ulasılabilir
+       //fakat sınıf.metodismi derken metod static olmalıdır.
 
 
         List<Category> categories = kategori.getList();
 
-        //buraya size 13 değilde 0 gelmesinin nedeni ben gidip yukarıda kategori.getList(); yapı
-        //veritabanını attığım listeyi çağırmıştım ama sonra gidip altta
-        //List<Category> categories = Arraylist<> diyerek yeni bir liste oluşturmuşum bundan kaynaklı liste boş gözüküyordu.
-        //ama yukarıda ki haline getirerek artık size 13 tanesi geliyor oldu.
 
         yaz(categories);
 
